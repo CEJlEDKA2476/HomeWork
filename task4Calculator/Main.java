@@ -1,0 +1,58 @@
+package com.company.task4Calculator;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int numOfAction;
+        double num1 = 0;
+        double num2 = 0;
+        do {
+            System.out.println("Введите номер действия\n1 " +
+                    "- Сложение\n2 - Вычитание\n3 - Умножение\n4 - Деление\n5 - Выход\n...");
+            numOfAction = in.nextInt();
+            if (numOfAction == 5) {
+                break;
+            }
+            if (num1 == 0 && num2 == 0) {
+                System.out.println("Введите 2 числа:");
+                num1 = in.nextDouble();
+                num2 = in.nextDouble();
+            } else {
+                System.out.println("Введите 2-ое число:");
+                num2 = in.nextDouble();
+            }
+
+            Addition addition = new Addition(num1, num2);
+            Subtraction subtraction = new Subtraction(num1, num2);
+            Multiplication multiplication = new Multiplication(num1, num2);
+            Division division = new Division(num1, num2);
+
+            switch (numOfAction) {
+                case 1: {
+                    num1 = addition.addition();
+                    break;
+                }
+                case 2: {
+                    num1 = subtraction.substraction();
+                    break;
+                }
+                case 3: {
+                    num1 = multiplication.multiplication();
+                    break;
+                }
+                case 4: {
+                    num1 = division.division();
+                    break;
+                }
+                default:
+                    break;
+            }
+
+            System.out.println("Результат - " + num1);
+        }
+        while (numOfAction != 5);
+        in.close();
+    }
+}
