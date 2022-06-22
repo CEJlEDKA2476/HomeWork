@@ -17,8 +17,5 @@ public class Main {
 
         } while (menuController.ifPlayAgain() == 1);
     }
-    // menuController, static, hashtable, теория map,
-    // winNumber -static,
-    //Написать магазин()
 }
 
