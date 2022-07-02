@@ -1,4 +1,4 @@
-package com.company.organization;
+package organization;
 
 public class Organization {
     Development development;

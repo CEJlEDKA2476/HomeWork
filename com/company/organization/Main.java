@@ -1,4 +1,4 @@
-package com.company.organization;
+package organization;
 
 public class Main {
     public static void main(String[] args) {
