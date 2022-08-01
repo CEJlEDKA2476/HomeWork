@@ -10,8 +10,8 @@ public class Task1 {
         System.out.println(Arrays.toString(twoSum(nums, target)));
     }
 
-    public static int[] twoSum(int[] nums, int target) {
-        int resultArray[] = new int[2];
+    private static int[] twoSum(int[] nums, int target) {
+        int[] resultArray = new int[2];
 
         for (int i = 0; i < nums.length; i++) {
             resultArray[0] = nums[i];
