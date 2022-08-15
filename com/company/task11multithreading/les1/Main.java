@@ -1,4 +1,4 @@
-package com.company.task11multithreading.les1;
+package task11multithreading.les1;
 
 public class Main {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class Main {
         myThread.start();
         myThread1.start();
 
-        Thread thread = new Thread(new MyRunnable());
+        Thread thread = new Thread(new task11multithreading.les1.MyRunnable());
         thread.interrupt();
 
     }

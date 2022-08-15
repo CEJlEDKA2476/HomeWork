@@ -1,4 +1,4 @@
-package com.company.task11multithreading.les1;
+package task11multithreading.les1;
 
 public class MyRunnable implements Runnable {
 

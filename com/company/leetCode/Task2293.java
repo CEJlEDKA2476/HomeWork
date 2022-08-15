@@ -25,7 +25,6 @@ public class Task2293 {
                         newList[j] = nums[i + 1];
                     }
                 }
-                i++;
                 break;
             }
         }
